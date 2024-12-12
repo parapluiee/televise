@@ -19,7 +19,7 @@ bspc desktop -l next
 array=()
 while IFS=  read -r -d $'\0'; do
     array+=("$REPLY")
-done < <(find /home/gris/files/torrents/french_stuff \( -name *.mp4 -o -name *.mkv \) -print0)
+done < <(find PATH/TO/VIDEOS \( -name *.mp4 -o -name *.mkv \) -print0)
 
 
 #initial sockets
